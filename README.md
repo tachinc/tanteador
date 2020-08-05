@@ -1,0 +1,2 @@
+# tanteador
+Tanteador de Scrabble
