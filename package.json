@@ -1,0 +1,14 @@
+{
+  "name": "scrabble",
+  "version": "1.0.0",
+  "description": "Contador de Scrabble",
+  "main": "scrabble.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rae": "^1.0.3"
+  }
+}

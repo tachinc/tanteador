@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrabble Counter</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="scrabble.js"></script>
+</head>
+<body>
+    <header id="fondo">
+        <h1>TANTEADOR SCRABBLE</h1>
+    </header>
+    <nav>
+        <div class="navContainer1">
+            <button type="submit"  onClick="refreshPage()">REINICIAR</button>
+            <a href="http://www.redeletras.com/rules/reglamento2007/reglamento2007.pdf" target="_blank">REGLAS</a>
+            <a href="https://dle.rae.es/" target="_blank">DICCIONARIO</a>
+
+        <!-- <input type="text" placeholder="Palabra" id='buscador'>
+        <button id='#botonBuscar' type='button'>Buscar en RAE</button> -->
+        </div>
+        <div class="navContainer">
+            <h3 id="reloj"></h3>
+            <button type="submit"  class="stasto" onClick="startTimer()">START</button>
+            <button type="submit"  class="stasto" onClick="stopTimer()">STOP</button>
+        </div>
+   
+    </nav>
+    <main>
+        
+        <div class="container1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQfCY7snlpfkIoRFs9kZ8dgrIocmaPEuB3tuBX30X1VRRoEWM-T&usqp=CAU'" alt="">
+        </div>
+        <div class="container">
+            <div class="punteador">
+                <form>
+                    <select id="jugadores" name="jugadores">
+                        <option value="PAULI">PAULI</option>
+                        <option value="TACHI">TACHI</option>
+                        <option value="BEBA">BEBA</option>
+                        <option value="JCRM">JCRM</option>
+                        <option value="JUG.1">JUG.1</option>
+                        <option value="JUG.2">JUG.2</option>
+                      </select>
+                    <!--<label>PAULI    :</label>-->
+                    <input type="number" id="puntos" min="1" max="99">
+                    <input type="button" id="sumaButton" value="+">
+                </form>
+                <div id=messageArea>RESULTADO:</div>
+            </div>
+            <div class="punteador">
+                <form>
+                    <select id="jugadores" name="jugadores">
+                        <option value="TACHI">TACHI</option>
+                        <option value="PAULI">PAULI</option>
+                        <option value="BEBA">BEBA</option>
+                        <option value="JCRM">JCRM</option>
+                        <option value="JUG.1">JUG.1</option>
+                        <option value="JUG.2">JUG.2</option>
+                      </select>
+                    <!--<label>TACHI  :</label>-->
+                    <input type="number" id="puntos2" min="1" max="99">
+                    <input type="button" id="sumaButton2" value="+">
+                </form>
+                <div id=messageArea2>RESULTADO:</div>
+            </div>  
+        </div>
+        
+        
+    </main>
+    <footer>
+        <h4>All rights reserved to TachINC Ltd.</h4>
+    </footer>
+   
+</body>
+</html>
